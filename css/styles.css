@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(215, 51%, 70%);
+  padding: 1.25rem;
+  margin-top: 6rem;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 0.8rem;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+p {
+  font-weight: 300;
+
+}
+
+h2 {
+  color: white;
+  margin: 1rem 0.5rem 0.5rem 0;
+}
+
+.attribution {
+  font-size: 11px; text-align: center;
+
+}
+
+.attribution a {
+   color: hsl(228, 45%, 44%);
+ }
+
+ .avatar {
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   padding-top: 2rem;
+ }
+
+ .container {
+   background-color: hsl(216, 50%, 16%);
+   padding: 1.25rem;
+   border-radius: 0.8rem;
+   margin-bottom: 1rem;
+   font-size: 16px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+
+ .container p {
+   margin-bottom: 1rem;
+ }
+
+ .container li {
+   display: flex;
+   align-items: center;
+ }
+
+ .container ul li img {
+   margin-right: 0.5rem;
+ }
+
+ .container .avatar img {
+   width: 3rem;
+   border: 2px solid white;
+   border-radius: 50%;
+   margin-right: 1rem;
+ }
+
+ .container .avatar span {
+   color: white;
+   font-weight: 400;
+ }
+
+ .equilibrium-img {
+   position: relative;
+ }
+
+ .equilibrium-img div {
+   position: absolute;
+   top: 0;
+   background-color: hsl(178, 100%, 50%, 60%);
+   width: 100%;
+   height: calc(100% - 4px);
+   z-index: 999;
+   border-radius: 0.8rem;
+   opacity: 0;
+   transition: opacity 0.3s ease-in-out;
+ }
+
+ .equilibrium-img div img {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+ }
+
+ .eth-text {
+   color: hsl(178, 100%, 50%);
+ }
+
+ .equilibrium-img div:hover {
+   cursor: pointer;
+   opacity: 100%;
+ }
+
+ @media (min-width: 500px) {
+   .container {
+     width: 450px;
+     margin: 0 auto 1rem;
+   }
+ }
+
+ h2:hover {
+   color: cyan;
+   cursor: pointer;
+ }
+
+ .container .avatar span:hover {
+   color: cyan;
+   cursor: pointer;
+ }
